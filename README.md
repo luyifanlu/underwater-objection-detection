@@ -1,3 +1,8 @@
+
+## note:cascade_rcnn_r50_fpn_1x.py.作者在原框架修改思路
+    1 数据格式路径// tools/data_process/xml2coco.py  tools/data_process/generate_test_json.py 
+    2 dataset settings//dataset_type = 'Underwater'对应underwater-objection-detection/mmdet/datasets/Underwater.py
+    3 data_root = 'data/'//对应创建数据文件root目录
 # Kesci 水下目标检测算法赛  underwater object detection algorithm contest Baseline <font color=red>**A榜 mAP 46-47**</font><br /> 
 
 ## 比赛地址：[Kesci 水下目标检测](https://www.kesci.com/home/competition/5e535a612537a0002ca864ac)
@@ -106,7 +111,6 @@
    - **预测**
 
     1. 运行:
-    
         r50:
 
         chmod +x tools/dist_test.sh
